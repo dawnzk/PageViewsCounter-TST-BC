@@ -1,0 +1,82 @@
+#counter_box {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    margin-top: 3px;
+    margin-right: 5px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px rgb(183, 183, 183);
+}
+
+
+#counter {
+    z-index: 5;
+    float: right;
+    width: 150px;
+    height:55px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-orient:vertical;
+    /* Safari、Opera 以及 Chrome */
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+
+    background-color: rgba(0, 0, 0, 0.79);
+
+}
+#tt {
+    position: static;
+    height:26px;
+    width: 150px;
+    font-family:'COCOGOOSE';
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    padding: 2px 0px ;
+
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+
+    background-color: rgba(10, 10, 10, 0.84);
+    color: #ffffff;
+
+}
+
+#tt:after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 100%;
+
+    background-color: rgb(65, 65, 65);
+}
+
+.number {
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+
+
+    color: #ffffff;
+    background-color: transparent;
+    opacity: 0.8;
+
+}
+.number:after {
+    content: ' /times';
+    font-size: 8px;
+    color: rgb(183, 183, 183);
+}
